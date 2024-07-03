@@ -19,7 +19,8 @@ namespace ControlesEjercicio1
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            string valor = textBox1.Text;
+            listBox1.Items.Add(valor);
         }
     }
 }

@@ -16,5 +16,15 @@ namespace ModalEjercicio1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            if (form2.ShowDialog() == DialogResult.OK)
+            {
+                string valor = form2.textBox1_public.Text;
+                listBox1.Items.Add(valor);
+            }
+        }
     }
 }
